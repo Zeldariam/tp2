@@ -1,0 +1,11 @@
+<p>Bonjour {{nom}} </p>
+<p>longeur du nom {{ta}}</p>
+<p>{{monom}}</p>
+<p>{{info()}}</p>
+<p>{{nom.length}}</p>
+
+<input type="text" [value]="nom" [disabled]="actif">
+<button bind-disabled="!actif" (click)="onAfficher()">Afficher</button>
+<input type="text" (keyup.enter)="onKeyUp($event)" #chose>
+<input type="text" #textbox />
+<button (click)="onAfficherContenu(textbox.value)">Afficher</button>

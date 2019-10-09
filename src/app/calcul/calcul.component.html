@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>exercice3</title>
+</head>
+<body>
+    <h1>Operations de calcul</h1>
+    donner un premier nombre <input type="text" (keyup)="onKeyUp($event)"> <br>
+    le carre est :{{calcul()}} <br>
+    Donnez un dexieme nombre <input type="text"  (keyup)="onKeyUp2($event)" #nombre2>
+    <button [disabled]="actif" (click)="calculSomme(nombre2.value)">Somme</button>
+    sommme: {{somme}}
+</body>
+</html>
