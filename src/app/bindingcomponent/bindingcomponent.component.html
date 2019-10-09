@@ -6,6 +6,10 @@
 
 <input type="text" [value]="nom" [disabled]="actif">
 <button bind-disabled="!actif" (click)="onAfficher()">Afficher</button>
-<input type="text" (keyup.enter)="onKeyUp($event)" #chose>
+
+<input type="text" (keyup.enter)="onKeyUp($event)" #chose><br>
+
 <input type="text" #textbox />
-<button (click)="onAfficherContenu(textbox.value)">Afficher</button>
+<button (click)="onAfficherContenu(textbox.value)">Afficher</button><br>
+<input type="text"[(ngModel)]="message">
+<p>le message a l'aide du DATA BINDING : {{message}}</p>

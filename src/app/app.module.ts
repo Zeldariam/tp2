@@ -6,6 +6,8 @@ import { BindingcomponentComponent } from './bindingcomponent/bindingcomponent.c
 import { TableauComponent } from './tableau/tableau.component';
 import { PropertybindingComponent } from './propertybinding/propertybinding.component';
 import { CalculComponent } from './calcul/calcul.component';
+import {FormsModule} from '@angular/forms';
+import { ProduitComponent } from './produit/produit.component';
 
 @NgModule({
   declarations: [
@@ -14,9 +16,11 @@ import { CalculComponent } from './calcul/calcul.component';
     TableauComponent,
     PropertybindingComponent,
     CalculComponent,
+    ProduitComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

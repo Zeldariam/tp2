@@ -21,12 +21,14 @@ export class CalculComponent implements OnInit {
       console.log(event.target + " "+event.target.value);
       this.nombre2 = event.target.value;
     } 
-    actif(){
-      if(this.nombre1==0 || this.nombre2==0){
+    
+    actif(n1:string,n2:string){
+      if(n1=='' || n2==''){
         return true;
       }
       return false;
     }
+
     calculSomme(val:number){
       this.nombre2=val;
       console.log(val); 

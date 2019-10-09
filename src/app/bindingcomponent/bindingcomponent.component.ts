@@ -9,8 +9,8 @@ export class BindingcomponentComponent implements OnInit {
   nom:string="ines";
   ta:number=this.nom.length;
   monom:string=this.nom.toUpperCase();
-
   age:number=19;
+  message:string="DSI";
   info(){
     return this.nom+ " a pour age "+this.age;
   }

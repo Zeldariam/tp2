@@ -5,10 +5,10 @@
 </head>
 <body>
     <h1>Operations de calcul</h1>
-    donner un premier nombre <input type="text" (keyup)="onKeyUp($event)"> <br>
+    donner un premier nombre <input type="text" (keyup)="onKeyUp($event)" #nombre>  <br>
     le carre est :{{calcul()}} <br>
-    Donnez un dexieme nombre <input type="text"  (keyup)="onKeyUp2($event)" #nombre2>
-    <button [disabled]="actif" (click)="calculSomme(nombre2.value)">Somme</button>
+    Donnez un dexieme nombre <input type="text"  (keyup)="0" #nombre2>
+    <button [disabled]="actif(nombre.value,nombre2.value) " (click)="calculSomme(nombre2.value)">Somme</button>
     sommme: {{somme}}
 </body>
 </html>
